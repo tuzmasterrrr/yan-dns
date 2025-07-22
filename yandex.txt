@@ -1,12 +1,5 @@
 ! Блокировка рекламы Яндекса и Директа
-yandex.ru##div.serp-adv
-yandex.ru##.serp-item[data-cid][data-fastname="ad"]
-yandex.ru##.direct-story
-yandex.ru##.serp-adv__found
-yandex.ru##.serp-adv__head
-yandex.ru##.serp-adv__banner
-yandex.ru##.serp-item__type_ad
-yandex.ru##.serp-item[data-cid]:has(.label_adv)
+
 
 ||an.yandex.ru^
 ||mc.yandex.ru^
@@ -22,5 +15,11 @@ yandex.ru##.serp-item[data-cid]:has(.label_adv)
 ||clck.yandex.ru^$third-party
 ||awaps.yandex.net^
 ||yandex.ru##.direct
+yandex.ru##div.serp-adv
 yandex.ru##.serp-item[data-cid][data-fastname="ad"]
+yandex.ru##.direct-story
 yandex.ru##.serp-adv__found
+yandex.ru##.serp-adv__head
+yandex.ru##.serp-adv__banner
+yandex.ru##.serp-item__type_ad
+yandex.ru##.serp-item[data-cid]:has(.label_adv)
