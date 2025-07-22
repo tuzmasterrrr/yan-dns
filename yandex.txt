@@ -1,0 +1,18 @@
+! Блокировка рекламы Яндекса и Директа
+
+||an.yandex.ru^
+||mc.yandex.ru^
+||yabs.yandex.ru^
+||adfox.yandex.ru^
+||ads.adfox.ru^
+||direct.yandex.ru^
+||redir.yandex.ru^
+||banners.adfox.ru^
+||static.adfox.ru^
+||ads.betweendigital.com^$domain=yandex.ru
+||advertising.yandex.ru^
+||clck.yandex.ru^$third-party
+||awaps.yandex.net^
+||yandex.ru##.direct
+yandex.ru##.serp-item[data-cid][data-fastname="ad"]
+yandex.ru##.serp-adv__found
