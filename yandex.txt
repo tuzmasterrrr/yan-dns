@@ -1,0 +1,31 @@
+! === Расширенные правила против Яндекс.Директа ===
+
+||yabs.yandex.ru^$important
+||an.yandex.ru^$important
+||adfox.yandex.ru^$important
+||direct.yandex.ru^$important
+||mc.yandex.ru^$important
+||awaps.yandex.net^$important
+||ads.adfox.ru^$important
+||banners.adfox.ru^$important
+||static.adfox.ru^$important
+||clck.yandex.ru^$important,third-party
+||advertising.yandex.ru^$important
+||redir.yandex.ru^$important
+
+! Скрытие рекламных блоков в поисковой выдаче Яндекса (динамические)
+
+yandex.ru#$#.serp-item[data-cid][data-fastname="ad"] { display: none !important; }
+yandex.ru#$#.serp-adv__found { display: none !important; }
+yandex.ru#$#.serp-adv__head { display: none !important; }
+yandex.ru#$#.serp-adv__banner { display: none !important; }
+yandex.ru#$#.serp-item__type_ad { display: none !important; }
+yandex.ru#$#.direct-story { display: none !important; }
+
+! Удаление рекламы с помощью AG Content Script API (работает, если включена расширенная фильтрация)
+
+yandex.ru#%#window.ya && window.ya.adfoxCode && (window.ya.adfoxCode = {})
+yandex.ru#%#window.ya && window.ya.adfoxCode && (window.ya.adfoxCode.insertTo = function(){})
+
+! Удаление узлов с DOM-обработкой
+yandex.ru#%#document.querySelectorAll('.serp-adv, .serp-adv__banner, .serp-adv__head, .serp-item__type_ad').forEach(el => el.remove())
