@@ -1,4 +1,4 @@
-! Блокировка рекламы Яндекса и Директа
+! Блокировка Яндекс.Директа и других рекламных источников Яндекса
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||yabs.yandex.ru^
@@ -8,16 +8,17 @@
 ||redir.yandex.ru^
 ||banners.adfox.ru^
 ||static.adfox.ru^
-||ads.betweendigital.com^$domain=yandex.ru
-||advertising.yandex.ru^
-||clck.yandex.ru^$third-party
 ||awaps.yandex.net^
-||yandex.ru##.direct
-yandex.ru##div.serp-adv
-yandex.ru##.serp-item[data-cid][data-fastname="ad"]
-yandex.ru##.direct-story
+||clck.yandex.ru^$third-party
+||advertising.yandex.ru^
+
+! Блокировка рекламных блоков в поиске Яндекса
+yandex.ru##.serp-adv
 yandex.ru##.serp-adv__found
 yandex.ru##.serp-adv__head
 yandex.ru##.serp-adv__banner
 yandex.ru##.serp-item__type_ad
+yandex.ru##.direct-story
+yandex.ru##.serp-item[data-cid][data-fastname="ad"]
 yandex.ru##.serp-item[data-cid]:has(.label_adv)
+
