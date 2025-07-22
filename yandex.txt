@@ -1,6 +1,4 @@
 ! Блокировка рекламы Яндекса и Директа
-
-
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||yabs.yandex.ru^
